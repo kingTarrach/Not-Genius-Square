@@ -1,24 +1,29 @@
 #include <SFML/Graphics.hpp>
+#include "Board.h"
+
+using sf::Vector2f; 
+using sf::Color; 
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Magenta);
 
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
 
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
+	sf::RenderWindow window(sf::VideoMode(600, 600), "Not Genuis Cube");		
 
-    return 0;
+	while (window.isOpen())
+	{
+		sf::Event event;
+		while (window.pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+				window.close();
+		}
+
+			window.clear();
+			window.draw(board);
+			window.display();
+		
+	}
+
+	return 0;
 }
