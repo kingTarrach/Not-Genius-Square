@@ -1,10 +1,14 @@
-#include <SFML/Graphics.hpp>
+
+#include "Shape.h"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Magenta);
+    sf::RenderWindow window(sf::VideoMode(1000, 750), "SFML works!");
+
+    //Demo Shape Parameters are (shapeNumber, Vector2f position)
+    //ShapeNumber determines what shape it is (will post shape values)
+    //Position self explanatory
+    Shape s1(9, sf::Vector2f(100, 100));
 
     while (window.isOpen())
     {
@@ -16,7 +20,7 @@ int main()
         }
 
         window.clear();
-        window.draw(shape);
+        window.draw(s1.getShape());
         window.display();
     }
 
