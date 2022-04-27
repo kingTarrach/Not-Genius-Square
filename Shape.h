@@ -1,36 +1,17 @@
-#pragma once
 
-#include <iostream>
-#include <SFML/Graphics.hpp>
+#include "BaseShape.h"
 
-
-
-
-class Shape : public sf::Sprite {
+class Shape : public BaseShape {
 
 public:
-
-
-	Shape(const int& shapeNumber, const sf::Vector2f& pos) : sf::Sprite() {
-		//Value for size defined below
-		this->shapeNumber = shapeNumber;
-		loadImage();
-		this->setTexture(image);
-		if (shapeNumber == 9) {
-			this->setOrigin(sf::Vector2f(370, 380));
-		}
-		else {
-			this->setOrigin(sf::Vector2f(370, 260));
-		}
-		this->setPosition(pos);
-	}
 	
+	void loadTexture(const int& shapeNumber);
 
 private:
 	
 	//Loads in the respective image based on piece number
 	void loadImage();
-	int shapeNumber;
-	sf::Texture image;
+	//int shapeNumber;
+	//sf::Texture image;
 
 };

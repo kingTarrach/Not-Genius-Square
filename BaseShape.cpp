@@ -1,7 +1,7 @@
 
-#include "Shape.h"
+#include "BaseShape.h"
 
-void Shape::loadImage()
+void BaseShape::loadImage()
 {
 	if (shapeNumber == 1) {
 		image.loadFromFile("Piece1.png");
@@ -34,7 +34,7 @@ void Shape::loadImage()
 
 }
 
-void Shape::loadTexture(const int& shapeNumber)
+void BaseShape::loadTexture(const int& shapeNumber)
 {
 	this->shapeNumber = shapeNumber;
 	loadImage();
