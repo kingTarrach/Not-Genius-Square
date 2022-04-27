@@ -1,0 +1,8 @@
+Not Genius Square Instructions:
+- Click on a piece to make it enter move mode.
+- Use WASD to move the piece in cardinal directions.
+- Use R to rotate the piece.
+- Press enter to set the piece down, you will not be able to set a piece down if it collides
+with another piece or blocking circle.
+- The game is won when all board tiles are occupied with no overlap.
+- Restart to create a new board.
