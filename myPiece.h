@@ -8,7 +8,7 @@ class myPiece : public sf::Drawable, public sf::Transformable {
 public:
 
 	void load(int pieceNumber, sf::Vector2f position, int size);
-	bool inBounds(sf::Vector2f position);
+	bool isOverlapping(sf::Vector2f position);
 	sf::Vector2f newPosition(sf::Vector2f mousePosition);
 	int getSize() {
 		return this->size;
