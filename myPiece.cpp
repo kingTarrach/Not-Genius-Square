@@ -160,7 +160,7 @@ void myPiece::makeBox(int size, int currentVertex, sf::Vector2f position)
 	piece[currentVertex + 4].position = sf::Vector2f(position.x, position.y);
 }
 
-bool myPiece::inBounds(sf::Vector2f position)
+bool isOverlapping(sf::Vector2f position);
 {
 
 	switch (shapeNumber) {
