@@ -16,6 +16,7 @@ public:
 	sf::VertexArray getPiece() {
 		return this->piece;
 	}
+	void setRelativePosition(sf::Vector2f desiredPosition);
 
 
 private:
