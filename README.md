@@ -34,7 +34,7 @@ there are also 9 game pieces as follows:
  Created by:
  Austin Tarrach, Cooper Page, Emma Johnson, and Hannah Woods
  
- Link to YouTube video:
+ Link to YouTube video: https://youtu.be/YzuE9blyIwU
  
   
 >>>>>>> main
