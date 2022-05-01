@@ -334,32 +334,43 @@ sf::Vector2f myPiece::centerPosition()
 
 void myPiece::setRelativePosition(sf::Vector2f desiredPosition)
 {
-	sf::Vector2f newPosition = desiredPosition;
+	sf::Vector2f newPosition(desiredPosition);
 	switch (shapeNumber) {
+	case 1:
+		newPosition.x += size;
+		newPosition.y += size;
+		break;
 	case 2:
-		newPosition.y += 50;
+		newPosition.x += size;
+		newPosition.y += size*2;
 		break;
 	case 3:
-		newPosition.y += 100;
+		newPosition.x += size;
+		newPosition.y += size*3;
 		break;
 	case 4:
-		newPosition.y += 150;
+		newPosition.x += size;
+		newPosition.y += size*4;
 		break;
 	case 5:
-		newPosition.x += 50;
-		newPosition.y += 50;
+		newPosition.x += size*2;
+		newPosition.y += size*2;
 		break;
 	case 6:
-		newPosition.y += 50;
+		newPosition.x += size;
+		newPosition.y += size*2;
 		break;
 	case 7:
-		newPosition.y += 50;
+		newPosition.x += size;
+		newPosition.y += size*2;
 		break;
 	case 8:
-		newPosition.y += 50;
+		newPosition.x += size;
+		newPosition.y += size*2;
 		break;
 	case 9:
-		newPosition.y += 50;
+		newPosition.x += size;
+		newPosition.y += size*2;
 		break;
 
 	}
