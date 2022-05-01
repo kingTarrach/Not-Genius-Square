@@ -2,8 +2,8 @@
 
 Menu::Menu(float width, float height)
 {
-
-	if (!font.loadFromFile("Debrosee-ALPnL.ttf"))
+	this->select = 1;
+	if (!font.loadFromFile("DEBROSEE.ttf"))
 	{
 		std::cout << "FUKKKKK";
 	}
@@ -14,7 +14,7 @@ Menu::Menu(float width, float height)
 	text[0].setCharacterSize(90);
 	text[0].setFillColor(sf::Color(217, 89, 128));
 	text[0].setStyle(sf::Text::Bold);
-	text[0].setPosition(sf::Vector2f(width /2, (height/5) *1));
+	text[0].setPosition(sf::Vector2f(width / 2, (height / 5) * 1));
 
 	text[1].setFont(font);
 	text[1].setString("PLAY");
@@ -40,7 +40,7 @@ Menu::Menu(float width, float height)
 
 }
 
-void Menu::DisplayMenu(sf::RenderWindow &window)
+void Menu::DisplayMenu(sf::RenderWindow& window)
 {
 	for (int i = 0; i < 4; i++)
 	{
@@ -51,21 +51,26 @@ void Menu::DisplayMenu(sf::RenderWindow &window)
 
 void Menu::MoveUp()
 {
-	if (this->selected - 1 >= 1)
+	
+	if (select - 1 >= 1)
 	{
-		text[selected].setFillColor(sf::Color::White);
-		selected--; 
-		text[selected].setFillColor(sf::Color(249, 155, 69));
-	}
+		std::cout << select << std::endl;
+		text[select].setFillColor(sf::Color::White);
+		select -= 1;
+		text[select].setFillColor(sf::Color(249, 155, 69));
+		//std::cout << selected << std::endl;
+}
 
 }
 
 void Menu::MoveDown()
 {
-	if (selected + 1 < 4)
+	if (select + 1 < 4)
 	{
-		text[selected].setFillColor(sf::Color::White);
-		selected = selected + 1;
-		text[selected].setFillColor(sf::Color(249, 155, 69));
+		std::cout << select << std::endl;
+		text[select].setFillColor(sf::Color::White);
+		select += 1;
+		text[select].setFillColor(sf::Color(249, 155, 69));
+		std::cout << select << std::endl;
 	}
 }
