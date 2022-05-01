@@ -1,5 +1,4 @@
 # Genius Square
-<<<<<<< Working-shape-code
 PA 9:
 The game is played on a 6x6 grid.
 There are 7 blocking circles that can be placed anywhere on the board.
@@ -16,7 +15,7 @@ There are also 9 game pieces as follows:
   You cannot place tiles on blocking circles or on other shape tiles.
   You must place all the pieces in such a way that all the tiles are filled with no overlap.
   Upon meeting this requirement, the game is won. 
-=======
+
 PA 9
 Game is a 6x6 grid
 There are 7 blocking circles that can be placed anywhere on the board
@@ -35,8 +34,3 @@ there are also 9 game pieces as follows:
  Austin Tarrach, Cooper Page, Emma Johnson, and Hannah Woods
  
  Link to YouTube video:
- 
-  
->>>>>>> main
- 
-  
