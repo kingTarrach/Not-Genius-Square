@@ -13,3 +13,9 @@ there are also 9 game pieces as follows:
   3x1 2x1 (tetris T)
   2x1 1x2 (1x2 stacked on 1x2 offset by one)
   
+ Created by:
+ Austin Tarrach, Cooper Page, Emma Johnson, and Hannah Woods
+ 
+ Link to YouTube video:
+ 
+  
